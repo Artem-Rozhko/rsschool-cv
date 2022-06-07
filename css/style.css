@@ -1,0 +1,303 @@
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/Muller Regular.eot');
+	src: local('☺'), url('../fonts/Muller Regular.woff') format('woff'), url('../fonts/Muller Regular.ttf') format('truetype'), url('../fonts/Muller Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/Fontfabric - MullerMedium.eot');
+	src: local('☺'), url('../fonts/Fontfabric - MullerMedium.woff') format('woff'), url('../fonts/Fontfabric - MullerMedium.ttf') format('truetype'), url('../fonts/Fontfabric - MullerMedium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/Fontfabric - MullerBold .eot');
+	src: local('☺'), url('../fonts/Fontfabric - MullerBold .woff') format('woff'), url('../fonts/Fontfabric - MullerBold .ttf') format('truetype'), url('../fonts/Fontfabric - MullerBold .svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+   body {
+    height: 100%;
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  /* Чтобы небыло гориз. склора */
+  .wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  /* ---------------------------*/
+  
+  .container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+
+  /* ------ Header-------- */
+
+  .header__menu {
+    padding: 40px 0 40px 0;
+    background-color: #858583;
+  }
+
+  .menu__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .menu__link {
+    color: black;
+    transition: .3s;
+  } 
+
+  a:hover {
+    color: #CCBA8D;
+  } 
+
+  .menu__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+ /* ------ Main-container -------- */
+
+ .main-content__container {
+    display: flex;
+ }
+
+  /* ------ Aside -------- */
+
+.aside{
+    width: 33%;
+    background-color: #858583;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+.user__img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+.section__title {
+      margin-bottom: 30px;
+  } 
+
+.title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+ .contacts {
+    padding: 70px 0 50px 40px;
+ }
+
+ .contacts__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .contacts__link {
+    position: relative;
+    color: black
+  }
+
+.item__location:before {
+    content:'';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/icon/map.svg');
+    margin: 0 -3px -3px 0;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.item__location:hover::before {
+    transform: scale(1.3);
+}
+
+.item__email:before {
+    content:'';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/icon/email.svg');
+    margin: 0 3px -3px 0;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.item__email:hover::before {
+    transform: scale(1.3);
+}
+
+.item__github:before {
+    content:'';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/icon/github.svg');
+    margin: 0 3px -3px 0;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.item__github:hover::before {
+    transform: scale(1.3);
+}
+
+  /* .contacts__icon_location {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon/map.svg) no-repeat;
+  } */
+
+  .education {
+    padding: 70px 0 0 40px;
+  }
+
+
+  .project {
+    padding: 70px 0 0 40px;
+  }
+
+  .language {
+    padding: 70px 0 0 40px;
+  }
+
+  /* ------ Main -------- */
+  .main {
+      width: 67%;
+  }
+ 
+  .main__header{
+    padding: 80px 0 60px 0;
+  }
+  .header__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 7px black;
+  }
+
+  .header__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .about {
+    padding: 98px 0 20px 120px;
+  }
+
+  .about__info {
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    padding: 130px 0 20px 120px;
+  }
+
+  .skills__item {
+    list-style: inside;
+  }
+
+  .skills__item:not(:last-child) {
+      margin-bottom: 20px;
+  }
+
+  .code {
+    padding: 112px 0 20px 120px;
+  }
+
+  .project {
+      padding: 288px 0 70px 40px;
+  }
+
+  .project__item {
+    list-style: inside;
+  }
+
+  .project__link {
+      color: black;
+  }
+
+  .language {
+      padding: 0 0 30px 40px;
+  }
+
+  .footer__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .footer__img {
+      width: 150px;
+      height: 150px;
+  }
+
+  .copyright {
+      display: block;
+      transform: translateY(5px);
+  }
+
+  a {
+	position: relative;
+ }
+
+  a:after {
+    content: "";
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+  a:hover:after,
+  a:focus:after {
+	width: 100%;
+  }
