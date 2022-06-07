@@ -13,7 +13,7 @@ I am 25 y.o. I work as an energy engineer. I want to become a front-end develope
 
 ## Education
 
-* RS school: Stage 0,1
+* RS school: Stage 0
 
 ## My Skills
 
